@@ -31,4 +31,5 @@ build/
 .vscode/
 
 ## API-Keys ###
-**/src/main/resources/twitter4j.properties
+## **/src/main/resources/twitter4j.properties
+## Include this if you're pushing your code to a public repo, otherwise others will have access to your API Keys.
