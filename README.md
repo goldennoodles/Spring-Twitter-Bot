@@ -12,7 +12,7 @@ There you will be able to get the API and consumer keys that are needed.
  
  The pom.xml currently holds the configuration needed if you are using Azure to deploy your application.
  If you don't deploy you application to the cloud, you will need to run it locally meaning that you cannot turn your computer off as
- it will end the app.
+ it will kill the app.
  
  a.k.a - best to deploy to a cloud provider.
 
@@ -32,14 +32,14 @@ You can easily add your own timings by following the structure in the `applicati
 ## Starting the application
 `mvn -U clean install`
 `mvn spring-boot:run`
-Once the application is spun up you need to hit the exposed endpoint. This will vary 
-if you are deploying in the cloud but for local pushes
+Once the application is spun up you need to hit the exposed endpoint. This will vary depending on where you are deploying.
+If running locally:
 `localhost:8080/startApp`
-It will then start posting messages.
+It will then start the processing.
 
 ## Common errors
 `503 - Duplicate Message`
-The tweet that you are trying to second already exists, this is probably because you 
+The tweet that you are trying to second already exists on twitter, this is probably because you 
 re-ran the application without removing the old tweets.
 #### Solutions:
 - Remove the old tweets from the `tweets.txt`
