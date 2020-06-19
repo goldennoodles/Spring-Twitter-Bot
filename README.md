@@ -16,7 +16,7 @@ There you will be able to get the API and consumer keys that are needed.
  
  a.k.a - best to deploy to a cloud provider.
 
-#####Note: They all have been outlined within the files where to change.
+##### Note: They all have been outlined within the files where to change.
 ### Current Status
 The bot will post a tweet every `4 hours` from the `tweets.txt` file. This can easily be 
 amended in the`TwitterBotReadLinesServiceImpl` by selecting from the pre-made timings, 
@@ -27,7 +27,7 @@ amended in the`TwitterBotReadLinesServiceImpl` by selecting from the pre-made ti
 - daily
 
 You can easily add your own timings by following the structure in the `application.yml`.
-####***Note: The timings are calculated in milliseconds.***
+#### ***Note: The timings are calculated in milliseconds.***
 
 ## Starting the application
 `mvn -U clean install`
@@ -37,7 +37,7 @@ if you are deploying in the cloud but for local pushes
 `localhost:8080/startApp`
 It will then start posting messages.
 
-##Common errors
+## Common errors
 `503 - Duplicate Message`
 The tweet that you are trying to second already exists, this is probably because you 
 re-ran the application without removing the old tweets.
@@ -45,7 +45,7 @@ re-ran the application without removing the old tweets.
 - Remove the old tweets from the `tweets.txt`
 - Manually delete from twitter profile.
 
-###Things to implement
+### Things to implement
  Bot is functional but I want to expand on its functionality in the future. Feel free 
  to fork and give it a go.
  - [ ] Like tweets based in #'s.
