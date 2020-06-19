@@ -8,8 +8,15 @@ There you will be able to get the API and consumer keys that are needed.
 `application.yml`
 `twitter4j.properties`
 `tweets.txt`
+`pom.xml` -> <plugins>
+ 
+ The pom.xml currently holds the configuration needed if you are using Azure to deploy your application.
+ If you don't deploy you application to the cloud, you will need to run it locally meaning that you cannot turn your computer off as
+ it will end the app.
+ 
+ a.k.a - best to deploy to a cloud provider.
 
-######Note: They all have been outlined within the files where to change.
+#####Note: They all have been outlined within the files where to change.
 ### Current Status
 The bot will post a tweet every `4 hours` from the `tweets.txt` file. This can easily be 
 amended in the`TwitterBotReadLinesServiceImpl` by selecting from the pre-made timings, 
@@ -20,7 +27,7 @@ amended in the`TwitterBotReadLinesServiceImpl` by selecting from the pre-made ti
 - daily
 
 You can easily add your own timings by following the structure in the `application.yml`.
-#####***Note: The timings are calculated in milliseconds.***
+####***Note: The timings are calculated in milliseconds.***
 
 ## Starting the application
 `mvn -U clean install`
