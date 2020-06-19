@@ -59,14 +59,3 @@ public class TwitterBotReadLinesServiceImpl {
             }
         }
 }
-
-/*
-
-az webapp log config --application-logging true --level verbose --name itsMelonBot --resource-group cloud-shell-storage-westeurope
-az webapp log show --name itsMelonBot --resource-group cloud-shell-storage-westeurope
-
-
-
-
-
- */
