@@ -1,0 +1,13 @@
+twitter:
+  auth:
+    api-key: get from developers.twitter
+    api-key-secret: get from developers.twitter
+    access-token: get from developers.twitter
+    access-token-secret: get from developers.twitter
+bot:
+  tweetfreq:
+    thirty-minutes: 1800000
+    five-minutes: 300000
+    hour: 3600000
+    four-hours: 14400000
+    day: 86400000
